@@ -1,9 +1,9 @@
-# basics.Variable 变量
+# Variable 变量
 
 ## var 与 val
 
-类比 **JavaScript ES6** 中新增的 *const* 与 *let* 关键字，
-直接定义出变 量和常量，而非像 **Java** 语言那样使用 *final* 关键字。
+类比 *JavaScript ES6* 中新增的 *const* 与 *let* 关键字，
+直接定义出变量和常量，而 *Java* 语言使用 *final* 关键字。
 
 ## 类型推断
 
