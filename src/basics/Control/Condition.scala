@@ -6,7 +6,12 @@ object Condition {
     val b = 4
     val c = 5
     if (a * a + b * b == c * c) {
-      println("直角三角形")
+      println("可以构成直角三角形")
+    }
+    if (a > b) {
+      println("a大于b")
+    } else {
+      println("a不大于b")
     }
   }
 }
