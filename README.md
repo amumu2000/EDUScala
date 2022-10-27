@@ -1,5 +1,7 @@
 # Scala 学习笔记
 
+[end](#end)
+
 ## 项目概述
 
 > 1. 作者：NEEPU_AMUMU
@@ -80,7 +82,7 @@ scoop会自动将bin目录加入path
 scoop install aria2 git
 ```
 
-## IntelliJ IDEA with Scala plugin
+## IntelliJ IDEA with Scala plugin {#end}
 
 1. IDEA [下载地址](https://www.jetbrains.com/idea/download/)
 2. 安装 scala 插件
