@@ -3,7 +3,7 @@
 * [Scala 学习笔记](#scala-学习笔记)
     * [项目概述](#项目概述)
     * [scala简介](#scala简介)
-    * [环境配置](#环境配置-★)
+    * [环境配置★](#环境配置)
         * [JDK and Scala runner](#jdk-and-scala-runner)
         * [IntelliJ IDEA with Scala plugin](#intellij-idea-with-scala-plugin)
 
@@ -21,7 +21,7 @@
      with easy access to huge ecosystems of libraries.
 > 2. Scala [官网链接](https://scala-lang.org/)
 
-## 环境配置 ★
+## 环境配置
 
 ### JDK and Scala runner
 
