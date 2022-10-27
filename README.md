@@ -1,3 +1,5 @@
+* [END](#IntelliJ IDEA with Scala plugin)
+
 # Scala 学习笔记
 
 ## 项目概述
@@ -84,5 +86,3 @@ scoop install aria2 git
 
 1. IDEA [下载地址](https://www.jetbrains.com/idea/download/)
 2. 安装 scala 插件
-
-[Top](#Scala 学习笔记)
