@@ -21,7 +21,7 @@
      with easy access to huge ecosystems of libraries.
 > 2. Scala [官网链接](https://scala-lang.org/)
 
-## 环境配置
+## 环境配置 ★
 
 ### JDK and Scala runner
 
