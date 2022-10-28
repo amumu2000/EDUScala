@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/L_Scala.iml" filepath="$PROJECT_DIR$/L_Scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EDUScala.iml" filepath="$PROJECT_DIR$/EDUScala.iml" />
     </modules>
   </component>
 </project>
