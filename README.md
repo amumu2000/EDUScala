@@ -33,7 +33,13 @@
     #启动powershell或者terminal，执行以下命令，查看JDK版本(检测JDK是否安装成功)
     java --version
     ```
-3. 配置JAVA_HOME，如`D:\Program Files\Java\jdk-17.0.5`
+   如以下结果
+    ```shell
+    java 17.0.5 2022-10-18 LTS
+    Java(TM) SE Runtime Environment (build 17.0.5+9-LTS-191)
+    Java HotSpot(TM) 64-Bit Server VM (build 17.0.5+9-LTS-191, mixed mode, sharing)
+    ```
+3. 配置JAVA_HOME，如 D:\Program Files\Java\jdk-17.0.5
     ```shell
     #确保以管理员身份启动powershell或者terminal，执行以下命令，配置JAVA_HOME
     $env:JAVA_HOME='D:\Program Files\Java\jdk-17.0.5'
