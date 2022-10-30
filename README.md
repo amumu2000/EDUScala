@@ -23,6 +23,9 @@
 
 ## 环境配置
 
+> 以下所有命令前面的 $ 符号，不是命令的一部分，仅代表这是一条命令，切记不要粘贴上 $ 符号，若为多条命令，
+> 请逐一执行命令，或者使用分号分隔多条命令，一并执行，或者编写执行脚本
+
 ### JDK and Scala runner
 
 #### JDK
@@ -31,7 +34,7 @@
 2. 直接双击下载的安装包，按步骤安装即可，可以将安装目录改为D盘，安装程序会自动添加 javapath
     ```shell
     #启动powershell或者terminal，执行以下命令，查看JDK版本(检测JDK是否安装成功)
-    java --version
+    $ java --version
     ```
    如以下结果
     ```shell
@@ -42,25 +45,25 @@
 3. 配置JAVA_HOME，如 D:\Program Files\Java\jdk-17.0.5
     ```shell
     #确保以管理员身份启动powershell或者terminal，执行以下命令，配置JAVA_HOME
-    $env:JAVA_HOME='D:\Program Files\Java\jdk-17.0.5'
-    [Environment]::SetEnvironmentVariable('JAVA_HOME', $env:JAVA_HOME, 'Machine')
+    $ $env:JAVA_HOME='D:\Program Files\Java\jdk-17.0.5'
+    $ [Environment]::SetEnvironmentVariable('JAVA_HOME', $env:JAVA_HOME, 'Machine')
     ```
 4. 获取JAVA_HOME的值
     ```shell
-    $env:JAVA_HOME
+    $ $env:JAVA_HOME
     ```
 
 #### Scala runner 安装方式1
 
 1. [GitHub下载地址](https://github.com/lampepfl/dotty) **需科学上网**
-2. 下载后得到 Scala 的压缩包，解压后，将*bin*目录加入系统*path*
+2. 下载后得到 Scala 的压缩包，解压后，将 bin 目录加入系统 path
     ```shell
-    #确保以管理员身份启动powershell或者terminal，执行以下命令
-    $addPath='D:\Program Files\scala3-3.2.0\bin';
-    $target='Machine';
-    $path=[Environment]::GetEnvironmentVariable('Path',$target);
-    $newPath=$path+$addPath+';';
-    [Environment]::SetEnvironmentVariable('Path', $newPath, $target);
+    #确保以管理员身份启动powershell或者terminal，执行以下命令，将bin目录加入系统path
+    $ $addPath='D:\Program Files\scala3-3.2.0\bin'
+    $ $target='Machine'
+    $ $path=[Environment]::GetEnvironmentVariable('Path',$target)
+    $ $newPath=$path+$addPath+';'
+    $ [Environment]::SetEnvironmentVariable('Path', $newPath, $target)
     ```
 
 #### Scala runner 安装方式2 ★ (Scoop方式)
@@ -68,20 +71,20 @@
 1. 首先确保以**管理员身份**启动Powershell(win10)或Powershell in Terminal(win11自带)，执行以下命令。
    若先前执行过该命令，可以逃过此步骤。该命令的作用是设置执行策略，确保有足够的权限运行ps1脚本来安装scoop。
     ```shell
-    set-executionpolicy remotesigned
+    $ set-executionpolicy remotesigned
     ```
 2. 设置Scoop安装目录的环境变量，默认为C盘，可以设置为D盘
     ```shell
-    $env:SCOOP='D:\Applications\Scoop'
-    [Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')
+    $ $env:SCOOP='D:\Applications\Scoop'
+    $ [Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')
     ```
 3. 下载并执行scoop安装脚本
     ```shell
-    iwr -useb https://gitee.com/glsnames/scoop-installer/raw/master/bin/install.ps1 | iex
+    $ iwr -useb https://gitee.com/glsnames/scoop-installer/raw/master/bin/install.ps1 | iex
     ```
 4. 查看scoop版本(测试scoop安装是否成功)
     ```shell
-    scoop --version
+    $ scoop --version
     ```
    如以下结果
     ```text
@@ -90,22 +93,33 @@
     ```
 5. scoop一键安装 Scala runner
     ```shell
-    scoop install scala
+    $ scoop install scala
     ```
    scoop会自动将bin目录加入path
 6. 其他包推荐
     ```shell
-    scoop install aria2 git
+    $ scoop install aria2 git
     ```
    aria2，终端多线程下载工具\
    git，最流行的版本控制工具
 7. 查看Scala版本
     ```shell
-    scala --version
+    $ scala --version
     ```
    如以下结果
     ```text
     Scala code runner version 3.2.0 -- Copyright 2002-2022, LAMP/EPFL
+    ```
+8. 启动Scala交互模式
+    ```shell
+    $ scala
+    ```
+   看到如下界面，启动成功
+    ```text
+    Welcome to Scala 3.2.0 (17.0.5, Java Java HotSpot(TM) 64-Bit Server VM).
+    Type in expressions for evaluation. Or try :help.
+    
+    scala>
     ```
 
 ### IntelliJ IDEA with Scala plugin
