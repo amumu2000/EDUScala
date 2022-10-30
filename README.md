@@ -71,46 +71,42 @@
     set-executionpolicy remotesigned
     ```
 2. 设置Scoop安装目录的环境变量，默认为C盘，可以设置为D盘
-
     ```shell
     $env:SCOOP='D:\Applications\Scoop'
     [Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')
     ```
-
 3. 下载并执行scoop安装脚本
-
     ```shell
     iwr -useb https://gitee.com/glsnames/scoop-installer/raw/master/bin/install.ps1 | iex
     ```
-
 4. 查看scoop版本(测试scoop安装是否成功)
-
     ```shell
     scoop --version
     ```
-
    如以下结果
-
     ```text
     Current Scoop version:
     v0.3.0 - Released at 2022-10-10
     ```
-
 5. scoop一键安装 Scala runner
-
     ```shell
     scoop install scala
     ```
-
    scoop会自动将bin目录加入path
-
 6. 其他包推荐
-
     ```shell
     scoop install aria2 git
     ```
-   aria2，终端多线程下载工具
+   aria2，终端多线程下载工具\
    git，最流行的版本控制工具
+7. 查看Scala版本
+    ```shell
+    scala --version
+    ```
+   如以下结果
+    ```text
+    Scala code runner version 3.2.0 -- Copyright 2002-2022, LAMP/EPFL
+    ```
 
 ### IntelliJ IDEA with Scala plugin
 
